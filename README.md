@@ -30,7 +30,7 @@
 ## Build containers
 
 ```powershell
-git clone https://github.com/tkubica12/kubernetes-demo
+git clone https://github.com/tkubica12/prima.git
 
 $rgName = "kubica-rg"
 $registryName = "kubicakontejnery"
