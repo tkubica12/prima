@@ -37,8 +37,9 @@ $registryName = "kubicakontejnery"
 
 az group create -n $rgname -l westeurope
 az acr create -n $registryName -g $rgname --sku Standard --admin-enabled  
-az acr build -r $registryName --image mujweb:v1 ./kubernetes-demo/web/version1
-az acr build -r $registryName --image mujweb:v2 ./kubernetes-demo/web/version2
+cd ./prima
+az acr build -r $registryName --image mujweb:v1 ./web/version1
+az acr build -r $registryName --image mujweb:v2 ./web/version2
 ```
 
 ## Run containers as container instance in Azure 
